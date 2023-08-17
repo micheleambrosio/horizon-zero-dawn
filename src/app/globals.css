@@ -1,5 +1,38 @@
+:root {
+  --black-pearl: #050F1B;
+  --nile-blue: #18304A;
+  --kashmir-blue : #536D8E;
+  --medium-blue: #2B39E2;
+  --dodger-blue: #448BF8;
+  --gold: #E8B412;
+  --text: #FFFFFF;
+  --background-linear-gradient: linear-gradient(90deg, rgba(72, 120, 193, 0.6) 0%, #2E4B6B 50%, rgba(72, 120, 193, 0.6) 90%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
+  height: 100vh;
+}
+
+body {
+  color: var(--text);
+  background-repeat: no-repeat;
+  background-image: url("/images/background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+body::after {
+  content: "";
+  background-image: var(--background-linear-gradient);
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
