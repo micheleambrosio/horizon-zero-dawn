@@ -1,0 +1,14 @@
+.links li {
+  display: inline-block;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.links li a svg {
+  stroke: var(--text);
+}
+
+.links li a:hover svg {
+  stroke: var(--text);
+}
+

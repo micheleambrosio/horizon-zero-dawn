@@ -12,6 +12,8 @@
     #2e4b6b 50%,
     rgba(72, 120, 193, 0.6) 90%
   );
+
+  --page-limit: 1400px;
 }
 
 * {
@@ -22,7 +24,7 @@
 
 html,
 body {
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
 }
 
@@ -52,5 +54,12 @@ main::before {
   background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.3;
+}
+
+header {
+  max-width: var(--page-limit);
+  margin: auto;
+  position: relative;
+  padding: 24px 0;
 }
 

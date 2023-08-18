@@ -1,0 +1,51 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .navbar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.links {
+  text-transform: lowercase;
+  font-size: 1.125rem;
+}
+
+.links li {
+  display: inline-block;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.links li a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.navbar .links li {
+  padding: 4px 32px;
+  transform: skew(-15deg);
+  transition: 0.5s background-color;
+}
+
+.navbar .links li a {
+  display: block;
+  transform: skew(15deg);
+}
+
+.navbar .links li:hover {
+  background-color: var(--nile-blue);
+}
+
+.navbar .links li:hover a {
+  color: var(--gold);
+}
+
+.navbar .links li.active:not(:hover) {
+  background-color: var(--gold);
+}
+
