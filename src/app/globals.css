@@ -1,12 +1,17 @@
 :root {
-  --black-pearl: #050F1B;
-  --nile-blue: #18304A;
-  --kashmir-blue : #536D8E;
-  --medium-blue: #2B39E2;
-  --dodger-blue: #448BF8;
-  --gold: #E8B412;
-  --text: #FFFFFF;
-  --background-linear-gradient: linear-gradient(90deg, rgba(72, 120, 193, 0.6) 0%, #2E4B6B 50%, rgba(72, 120, 193, 0.6) 90%);
+  --black-pearl: #050f1b;
+  --nile-blue: #18304a;
+  --kashmir-blue: #536d8e;
+  --medium-blue: #2b39e2;
+  --dodger-blue: #448bf8;
+  --gold: #e8b412;
+  --text: #ffffff;
+  --background-linear-gradient: linear-gradient(
+    90deg,
+    rgba(72, 120, 193, 0.6) 0%,
+    #2e4b6b 50%,
+    rgba(72, 120, 193, 0.6) 90%
+  );
 }
 
 * {
@@ -29,7 +34,8 @@ body {
   background-position: center;
 }
 
-body::before, body::after {
+body::before,
+main::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -40,10 +46,11 @@ body::before {
   background-image: var(--background-linear-gradient);
 }
 
-body::after {
+main::before {
   background-image: url("/images/aloy-background.png");
   background-size: 50%;
   background-position: top center;
   background-repeat: no-repeat;
-  opacity: .3;
+  opacity: 0.3;
 }
+

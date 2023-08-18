@@ -1,4 +1,10 @@
+import TeaserVideo from "@Components/TeaserVideo";
+
 export default function Home() {
-  return null;
+  return (
+    <main>
+      <TeaserVideo />
+    </main>
+  );
 }
 
