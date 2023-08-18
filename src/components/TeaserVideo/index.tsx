@@ -13,7 +13,7 @@ export default function TeaserVideo({ show }: IProps) {
     <div className={styles.wrapper}>
       <video
         className={styles.video}
-        src="/videos/horizon-zero-dawn-teaser.mp4"
+        src="/videos/horizon-zero-dawn-teaser.mp4#t=19"
         autoPlay
         muted
       ></video>
