@@ -1,10 +1,19 @@
+"use client";
+import { useEffect, useState } from "react";
+
 import styles from "./teaserVideo.module.css";
 
-interface IProps {
-  show?: boolean;
-}
+export default function TeaserVideo() {
+  const [show, setShow] = useState(false);
 
-export default function TeaserVideo({ show }: IProps) {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShow(true);
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   if (!show) {
     return null;
   }
