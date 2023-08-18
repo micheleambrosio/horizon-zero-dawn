@@ -11,15 +11,12 @@ export default function TeaserVideo({ show }: IProps) {
 
   return (
     <div className={styles.wrapper}>
-      <iframe
+      <video
         className={styles.video}
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/9axpikOIHEo?controls=0&amp;start=19&autoplay=1&mute=1"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
+        src="/videos/horizon-zero-dawn-teaser.mp4"
+        autoPlay
+        muted
+      ></video>
     </div>
   );
 }
