@@ -9,10 +9,10 @@ export default function TeaserVideo() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 10000);
+    }, 1000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [show]);
 
   if (!show) {
     return null;
@@ -23,6 +23,7 @@ export default function TeaserVideo() {
       <video
         className={styles.video}
         src="/videos/horizon-zero-dawn-teaser.mp4#t=19"
+        onEnded={() => setShow(false)}
         autoPlay
         muted
       ></video>

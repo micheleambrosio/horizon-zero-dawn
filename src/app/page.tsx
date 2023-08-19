@@ -1,4 +1,11 @@
+import ParticlesContainer from "@/components/Particles";
+
 export default function Home() {
-  return <main></main>;
+  return (
+    <>
+      <ParticlesContainer />
+      <main></main>
+    </>
+  );
 }
 

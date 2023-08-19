@@ -56,7 +56,8 @@ body::before {
   opacity: 0.3;
 }
 
-header {
+header,
+main {
   max-width: var(--page-limit);
   margin: auto;
   position: relative;
