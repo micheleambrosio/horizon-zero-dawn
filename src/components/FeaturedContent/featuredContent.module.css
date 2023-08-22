@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  font-size: 1.125rem;
+  font-weight: lighter;
+  position: relative;
+}
+
+.content p {
+  width: 50%;
+}
+
+.imageContainer {
+  width: 600px;
+  position: absolute;
+  left: 432px;
+}
+
+.imageContainer img {
+  object-fit: contain;
+  position: relative !important;
+  filter: var(--image-shadow);
+}
+
+.buttons button {
+  margin: 0 4px;
+  padding: 14px 64px;
+  color: var(--text);
+  transform: skew(calc(var(--skew-deg) * -1));
+  position: relative;
+}
+
+.buttons button span {
+  display: block;
+  transform: skew(15deg);
+}
+
+.buttons button:first-child {
+  background-color: var(--gold);
+}
+
+.buttons button:first-child:hover {
+  background-color: var(--nile-blue);
+  color: var(--gold);
+}
+
+.buttons button:last-child {
+  border: 1px solid var(--gold);
+}
+
+.buttons button:last-child::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--dodger-blue);
+  left: 0;
+  top: 0;
+  filter: blur(40px);
+  transition: 0.5s;
+}
+
+.buttons button:last-child:hover::before {
+  background-color: var(--gold);
+  filter: blur(50px);
+}
+
+.platforms {
+  display: flex;
+  gap: 24px;
+}
+

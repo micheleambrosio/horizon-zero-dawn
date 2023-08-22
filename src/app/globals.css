@@ -14,6 +14,8 @@
   );
 
   --page-limit: 1400px;
+  --image-shadow: drop-shadow(-13px 4px 28px rgba(24, 48, 74, 0.5));
+  --skew-deg: 15deg;
 }
 
 * {
@@ -62,5 +64,18 @@ main {
   margin: auto;
   position: relative;
   padding: 24px 0;
+}
+
+main {
+  height: 100%;
+}
+
+button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  cursor: pointer;
+  transition: 0.8s;
 }
 

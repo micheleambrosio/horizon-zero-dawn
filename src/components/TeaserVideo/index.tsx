@@ -9,7 +9,7 @@ export default function TeaserVideo() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShow(true);
-    }, 1000);
+    }, 10000);
 
     return () => clearTimeout(timer);
   }, [show]);

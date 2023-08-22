@@ -27,7 +27,7 @@ export default function ParticlesContainer() {
           interactivity: {
             events: {
               onHover: {
-                enable: false,
+                enable: true,
                 mode: "repulse",
                 parallax: {
                   enable: false,
@@ -52,7 +52,7 @@ export default function ParticlesContainer() {
             move: {
               enable: true,
               outMode: "bounce",
-              speed: 1,
+              speed: 1.5,
             },
             number: {
               density: {
