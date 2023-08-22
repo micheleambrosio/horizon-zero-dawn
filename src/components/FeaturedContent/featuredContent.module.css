@@ -11,7 +11,7 @@
   flex-direction: column;
   gap: 64px;
   font-size: 1.125rem;
-  font-weight: lighter;
+  font-weight: 300;
   position: relative;
 }
 
@@ -22,13 +22,17 @@
 .imageContainer {
   width: 600px;
   position: absolute;
-  left: 432px;
+  left: 380px;
 }
 
 .imageContainer img {
   object-fit: contain;
   position: relative !important;
   filter: var(--image-shadow);
+}
+
+.buttons {
+  z-index: 1;
 }
 
 .buttons button {
@@ -41,7 +45,7 @@
 
 .buttons button span {
   display: block;
-  transform: skew(15deg);
+  transform: skew(var(--skew-deg));
 }
 
 .buttons button:first-child {
@@ -55,6 +59,7 @@
 
 .buttons button:last-child {
   border: 1px solid var(--gold);
+  border-image: linear-gradient(90deg, var(--gold) 65%, transparent 80%) 1;
 }
 
 .buttons button:last-child::before {
@@ -78,4 +83,3 @@
   display: flex;
   gap: 24px;
 }
-
