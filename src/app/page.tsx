@@ -1,14 +1,17 @@
-import ParticlesContainer from "@/components/Particles";
-import FeaturedContent from "@/components/FeaturedContent";
+import styles from "./page.module.css";
+
+import ParticlesContainer from "@Components/Particles";
+import FeaturedContent from "@Components/FeaturedContent";
+import MachinesCards from "@Components/MachinesCards";
 
 export default function Home() {
   return (
     <>
       <ParticlesContainer />
-      <main>
+      <main className={styles.container}>
         <FeaturedContent />
+        <MachinesCards />
       </main>
     </>
   );
 }
-

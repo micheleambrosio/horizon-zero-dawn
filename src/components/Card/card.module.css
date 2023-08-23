@@ -1,0 +1,8 @@
+.container {
+  width: 320px;
+  height: 184px;
+  background-color: blue;
+  transform: skew(calc(var(--skew-deg) * -1));
+  box-shadow: 0 0 20px 5px var(--dodger-blue);
+  background-size: cover;
+}
