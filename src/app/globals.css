@@ -26,8 +26,7 @@
 
 html,
 body {
-  overflow: hidden;
-  height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,6 +35,7 @@ body {
   background-image: url("/images/background.png");
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 
 html::before,
@@ -67,7 +67,7 @@ main {
 }
 
 main {
-  height: 100%;
+  height: calc(100% - 120px);
 }
 
 button {
@@ -78,4 +78,3 @@ button {
   cursor: pointer;
   transition: 0.8s;
 }
-

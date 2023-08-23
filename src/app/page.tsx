@@ -1,13 +1,12 @@
 import styles from "./page.module.css";
 
-import ParticlesContainer from "@Components/Particles";
 import FeaturedContent from "@Components/FeaturedContent";
 import MachinesCards from "@Components/MachinesCards";
 
 export default function Home() {
   return (
     <>
-      <ParticlesContainer />
+      {/* <ParticlesContainer /> */}
       <main className={styles.container}>
         <FeaturedContent />
         <MachinesCards />

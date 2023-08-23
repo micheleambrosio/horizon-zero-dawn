@@ -5,4 +5,14 @@
   transform: skew(calc(var(--skew-deg) * -1));
   box-shadow: 0 0 20px 5px var(--dodger-blue);
   background-size: cover;
+  position: relative;
+}
+
+.image {
+  width: 300px;
+  height: 250px;
+  transform: skew(var(--skew-deg));
+  object-fit: contain;
+  top: -40%;
+  position: absolute;
 }
