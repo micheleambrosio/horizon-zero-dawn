@@ -1,5 +1,5 @@
 .container {
-  width: 320px;
+  width: 312px;
   height: 184px;
   background-color: blue;
   transform: skew(calc(var(--skew-deg) * -1));
@@ -9,8 +9,8 @@
 }
 
 .image {
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: 132%;
   transform: skew(var(--skew-deg));
   object-fit: contain;
   top: -40%;

@@ -14,6 +14,7 @@
   );
 
   --page-limit: 1400px;
+  --main-container-height: calc(100% - 120px);
   --image-shadow: drop-shadow(-13px 4px 28px rgba(24, 48, 74, 0.5));
   --skew-deg: 15deg;
 }
@@ -67,7 +68,7 @@ main {
 }
 
 main {
-  height: calc(100% - 120px);
+  height: var(--main-container-height);
 }
 
 button {

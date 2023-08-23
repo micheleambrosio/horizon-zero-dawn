@@ -12,10 +12,6 @@ export default function ParticlesContainer() {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(() => {
-    return null;
-  }, []);
-
   return (
     <>
       <Particles
@@ -77,4 +73,3 @@ export default function ParticlesContainer() {
     </>
   );
 }
-

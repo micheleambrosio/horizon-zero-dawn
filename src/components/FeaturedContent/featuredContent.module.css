@@ -20,14 +20,14 @@
 }
 
 .imageContainer {
-  width: 600px;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  left: 380px;
+  left: -16px;
 }
 
 .imageContainer img {
   object-fit: contain;
-  position: relative !important;
   filter: var(--image-shadow);
 }
 
